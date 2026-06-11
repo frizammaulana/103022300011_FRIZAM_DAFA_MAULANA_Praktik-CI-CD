@@ -14,7 +14,7 @@
 
     <distributionManagement>
         <repository>
-            <di>github</id>
+            <id>github</id>
             <name>Github Packages</name>
             <url>https://maven.pkg.github.com/frizammaulana/103022300011_FRIZAM_DAFA_MAULANA_Praktik-CI-CD</url>
         </repository>
