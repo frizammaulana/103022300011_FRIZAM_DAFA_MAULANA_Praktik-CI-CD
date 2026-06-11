@@ -6,6 +6,8 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
+#gagal pertama: Lupa nge add env (github token dan sonar token)
+
 name: Java CI with Maven
 
 on:
@@ -38,4 +40,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build, Test dan Analisis
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn -B verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.projectKey=frizammaulana_103022300011_FRIZAM_DAFA_MAULANA_Praktik-CI-CD -Dsonar.organization=frizammaulana
