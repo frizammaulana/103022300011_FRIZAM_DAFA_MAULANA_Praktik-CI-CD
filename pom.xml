@@ -11,7 +11,15 @@
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany.simplecalculator.SimpleCalculator</exec.mainClass>
     </properties>
-    
+
+    <distributionManagement>
+        <repository>
+            <di>github</id>
+            <name>Github Packages</name>
+            <url>https://maven.pkg.github.com/frizammaulana/103022300011_FRIZAM_DAFA_MAULANA_Praktik-CI-CD</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
