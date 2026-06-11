@@ -39,6 +39,7 @@ jobs:
         java-version: '23'
         distribution: 'temurin'
         server-id: github
+        settings-path: ${{ github.workspace }}
         cache: maven
     - name: Build, Test dan Analisis
       env:
